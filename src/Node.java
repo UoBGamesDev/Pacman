@@ -24,7 +24,7 @@ public class Node
 		
 		if(SetHelper.setContains(AIController.getIncludedInPath(), position))
 		{
-			fValue += 25;
+			fValue += 20;
 		}
 		
 		

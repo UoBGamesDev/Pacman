@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="20" tilewidth="20" tileheight="20">
+ <tileset firstgid="1" name="Walls" tilewidth="20" tileheight="20">
+  <image source="PacmanTiles.png" width="200" height="200"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="30" height="20">
+  <data encoding="base64" compression="zlib">
+   eJy9VdEOwyAIpGu7N/fYn+get7X//2UbiSQ3ggbSlkt48BROUWEiojnZxp89yI9nZ24NxCmgO8FeZHyrJpxH1/LTsVH3U+feaqy5V8Nwjegit8EYdTOhdQe67i3dlS7nYKQ88F1jvoWz3oTmWvE8vpjfEuA4BuZsqFw0Hp7b62vB6yv3in8yQ5ex0v+78vjyP9yBi+YZ8yu1pvXnNWfB64t7idTWo7DeVUbdkHv11MkF7AxE+tGiOG29WnG0H8la6+yl46djR/sRrm3peiB9YUs2PvcX0WEXDA==
+  </data>
+ </layer>
+ <objectgroup name="Spawns" width="30" height="20">
+  <object name="EnemySpawn" x="240" y="180" width="120" height="40"/>
+  <object name="PlayerSpawn" x="280" y="300" width="40" height="20"/>
+ </objectgroup>
+ <objectgroup name="Collisions" width="30" height="20">
+  <object x="0" y="0" width="600" height="20"/>
+  <object x="220" y="20" width="160" height="60"/>
+  <object x="400" y="40" width="80" height="40"/>
+  <object x="500" y="40" width="60" height="40"/>
+  <object x="120" y="40" width="80" height="40"/>
+  <object x="40" y="40" width="60" height="40"/>
+  <object x="0" y="20" width="20" height="180"/>
+  <object x="20" y="120" width="20" height="80"/>
+  <object x="0" y="220" width="20" height="180"/>
+  <object x="20" y="220" width="20" height="80"/>
+  <object x="20" y="380" width="580" height="20"/>
+  <object x="580" y="220" width="20" height="160"/>
+  <object x="560" y="220" width="20" height="80"/>
+  <object x="580" y="20" width="20" height="180"/>
+  <object x="560" y="120" width="20" height="80"/>
+  <object x="60" y="100" width="480" height="20"/>
+  <object x="60" y="140" width="80" height="120"/>
+  <object x="160" y="140" width="80" height="120"/>
+  <object x="240" y="160" width="40" height="20"/>
+  <object x="240" y="220" width="40" height="20"/>
+  <object x="320" y="160" width="40" height="20"/>
+  <object x="320" y="220" width="40" height="20"/>
+  <object x="360" y="140" width="80" height="120"/>
+  <object x="460" y="140" width="80" height="120"/>
+  <object x="60" y="280" width="480" height="20"/>
+  <object x="40" y="320" width="60" height="40"/>
+  <object x="120" y="320" width="80" height="40"/>
+  <object x="220" y="320" width="160" height="60"/>
+  <object x="400" y="320" width="80" height="40"/>
+  <object x="500" y="320" width="60" height="20"/>
+  <object x="580" y="200" width="20" height="20"/>
+  <object x="0" y="200" width="20" height="20"/>
+ </objectgroup>
+ <objectgroup name="Blobs" width="30" height="20">
+  <object x="20" y="20" width="20" height="20"/>
+  <object x="40" y="20" width="20" height="20"/>
+  <object x="60" y="20" width="20" height="20"/>
+  <object x="80" y="20" width="20" height="20"/>
+  <object x="100" y="20" width="20" height="20"/>
+  <object x="120" y="20" width="20" height="20"/>
+  <object x="140" y="20" width="20" height="20"/>
+  <object x="160" y="20" width="20" height="20"/>
+  <object x="180" y="20" width="20" height="20"/>
+  <object x="200" y="20" width="20" height="20"/>
+  <object x="200" y="40" width="20" height="20"/>
+  <object x="200" y="60" width="20" height="20"/>
+  <object x="100" y="40" width="20" height="20"/>
+  <object x="100" y="60" width="20" height="20"/>
+  <object x="20" y="40" width="20" height="20"/>
+  <object x="20" y="60" width="20" height="20"/>
+  <object x="20" y="80" width="20" height="20"/>
+  <object x="40" y="80" width="20" height="20"/>
+  <object x="60" y="80" width="20" height="20"/>
+  <object x="80" y="80" width="20" height="20"/>
+  <object x="100" y="80" width="20" height="20"/>
+  <object x="120" y="80" width="20" height="20"/>
+  <object x="140" y="80" width="20" height="20"/>
+  <object x="160" y="80" width="20" height="20"/>
+  <object x="180" y="80" width="20" height="20"/>
+  <object x="200" y="80" width="20" height="20"/>
+  <object x="220" y="80" width="20" height="20"/>
+  <object x="240" y="80" width="20" height="20"/>
+  <object x="260" y="80" width="20" height="20"/>
+  <object x="280" y="80" width="20" height="20"/>
+  <object x="300" y="80" width="20" height="20"/>
+  <object x="320" y="80" width="20" height="20"/>
+  <object x="340" y="80" width="20" height="20"/>
+  <object x="360" y="80" width="20" height="20"/>
+  <object x="380" y="80" width="20" height="20"/>
+  <object x="380" y="60" width="20" height="20"/>
+  <object x="380" y="40" width="20" height="20"/>
+  <object x="380" y="20" width="20" height="20"/>
+  <object x="400" y="20" width="20" height="20"/>
+  <object x="420" y="20" width="20" height="20"/>
+  <object x="440" y="20" width="20" height="20"/>
+  <object x="460" y="20" width="20" height="20"/>
+  <object x="480" y="20" width="20" height="20"/>
+  <object x="480" y="40" width="20" height="20"/>
+  <object x="480" y="60" width="20" height="20"/>
+  <object x="480" y="80" width="20" height="20"/>
+  <object x="460" y="80" width="20" height="20"/>
+  <object x="440" y="80" width="20" height="20"/>
+  <object x="420" y="80" width="20" height="20"/>
+  <object x="400" y="80" width="20" height="20"/>
+  <object x="500" y="20" width="20" height="20"/>
+  <object x="520" y="20" width="20" height="20"/>
+  <object x="540" y="20" width="20" height="20"/>
+  <object x="560" y="20" width="20" height="20"/>
+  <object x="560" y="40" width="20" height="20"/>
+  <object x="560" y="60" width="20" height="20"/>
+  <object x="560" y="80" width="20" height="20"/>
+  <object x="540" y="80" width="20" height="20"/>
+  <object x="520" y="80" width="20" height="20"/>
+  <object x="500" y="80" width="20" height="20"/>
+  <object x="20" y="300" width="20" height="20"/>
+  <object x="40" y="300" width="20" height="20"/>
+  <object x="60" y="300" width="20" height="20"/>
+  <object x="80" y="300" width="20" height="20"/>
+  <object x="100" y="300" width="20" height="20"/>
+  <object x="120" y="300" width="20" height="20"/>
+  <object x="140" y="300" width="20" height="20"/>
+  <object x="160" y="300" width="20" height="20"/>
+  <object x="180" y="300" width="20" height="20"/>
+  <object x="200" y="300" width="20" height="20"/>
+  <object x="220" y="300" width="20" height="20"/>
+  <object x="240" y="300" width="20" height="20"/>
+  <object x="260" y="300" width="20" height="20"/>
+  <object x="280" y="300" width="20" height="20"/>
+  <object x="300" y="300" width="20" height="20"/>
+  <object x="320" y="300" width="20" height="20"/>
+  <object x="340" y="300" width="20" height="20"/>
+  <object x="360" y="300" width="20" height="20"/>
+  <object x="380" y="300" width="20" height="20"/>
+  <object x="400" y="300" width="20" height="20"/>
+  <object x="420" y="300" width="20" height="20"/>
+  <object x="440" y="300" width="20" height="20"/>
+  <object x="460" y="300" width="20" height="20"/>
+  <object x="480" y="300" width="20" height="20"/>
+  <object x="500" y="300" width="20" height="20"/>
+  <object x="520" y="300" width="20" height="20"/>
+  <object x="540" y="300" width="20" height="20"/>
+  <object x="560" y="300" width="20" height="20"/>
+  <object x="560" y="320" width="20" height="20"/>
+  <object x="560" y="340" width="20" height="20"/>
+  <object x="560" y="360" width="20" height="20"/>
+  <object x="540" y="360" width="20" height="20"/>
+  <object x="520" y="360" width="20" height="20"/>
+  <object x="500" y="360" width="20" height="20"/>
+  <object x="480" y="360" width="20" height="20"/>
+  <object x="480" y="340" width="20" height="20"/>
+  <object x="480" y="320" width="20" height="20"/>
+  <object x="460" y="360" width="20" height="20"/>
+  <object x="440" y="360" width="20" height="20"/>
+  <object x="420" y="360" width="20" height="20"/>
+  <object x="400" y="360" width="20" height="20"/>
+  <object x="380" y="360" width="20" height="20"/>
+  <object x="380" y="340" width="20" height="20"/>
+  <object x="380" y="320" width="20" height="20"/>
+  <object x="200" y="320" width="20" height="20"/>
+  <object x="200" y="340" width="20" height="20"/>
+  <object x="200" y="360" width="20" height="20"/>
+  <object x="180" y="360" width="20" height="20"/>
+  <object x="160" y="360" width="20" height="20"/>
+  <object x="140" y="360" width="20" height="20"/>
+  <object x="120" y="360" width="20" height="20"/>
+  <object x="100" y="360" width="20" height="20"/>
+  <object x="100" y="340" width="20" height="20"/>
+  <object x="100" y="320" width="20" height="20"/>
+  <object x="80" y="360" width="20" height="20"/>
+  <object x="60" y="360" width="20" height="20"/>
+  <object x="40" y="360" width="20" height="20"/>
+  <object x="20" y="360" width="20" height="20"/>
+  <object x="20" y="340" width="20" height="20"/>
+  <object x="20" y="320" width="20" height="20"/>
+  <object x="40" y="100" width="20" height="20"/>
+  <object x="40" y="120" width="20" height="20"/>
+  <object x="40" y="140" width="20" height="20"/>
+  <object x="40" y="160" width="20" height="20"/>
+  <object x="40" y="180" width="20" height="20"/>
+  <object x="40" y="200" width="20" height="20"/>
+  <object x="40" y="220" width="20" height="20"/>
+  <object x="40" y="240" width="20" height="20"/>
+  <object x="40" y="260" width="20" height="20"/>
+  <object x="40" y="280" width="20" height="20"/>
+  <object x="540" y="100" width="20" height="20"/>
+  <object x="540" y="120" width="20" height="20"/>
+  <object x="540" y="140" width="20" height="20"/>
+  <object x="540" y="160" width="20" height="20"/>
+  <object x="540" y="180" width="20" height="20"/>
+  <object x="540" y="200" width="20" height="20"/>
+  <object x="540" y="220" width="20" height="20"/>
+  <object x="540" y="240" width="20" height="20"/>
+  <object x="540" y="260" width="20" height="20"/>
+  <object x="540" y="280" width="20" height="20"/>
+ </objectgroup>
+</map>

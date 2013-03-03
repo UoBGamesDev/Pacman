@@ -1,7 +1,5 @@
 import java.util.List;
 
-import javax.swing.text.Position;
-
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.Image;
@@ -18,6 +16,7 @@ public class Character extends GameComponent implements IEntity
 	private Direction directionOfMovement = Direction.NONE;
 	private boolean player;
 	private Points points;
+	private Main main;
 
 	public Character(Point position, ICharacterController controller,
 			CollisionChecker collisionChecker, int updateSpeed, Image image,
@@ -29,14 +28,14 @@ public class Character extends GameComponent implements IEntity
 		this.controller = controller;
 		this.collisionChecker = collisionChecker;
 		this.image = image;
-		
-		if(player)
+		this.main = main;
+
+		if (player)
 		{
-		this.points = new Points();
-		main.addGameComponent(points);
+			this.points = new Points();
+			main.addGameComponent(points);
 		}
-		
-		
+
 	}
 
 	@Override
@@ -59,24 +58,24 @@ public class Character extends GameComponent implements IEntity
 				{
 					if (entity instanceof Character)
 					{
-						Character character = (Character)entity;
-						if(character.isPlayer())
+						Character character = (Character) entity;
+						if (character.isPlayer())
 						{
-						System.out.println("GAME OVER");
+							main.restart();
 						}
-						
+
 						position = oldPosition;
 					}
-					else if(entity instanceof Wall)
+					else if (entity instanceof Wall)
 					{
-						position = oldPosition;	
+						position = oldPosition;
 					}
-					else if(entity instanceof Blob)
+					else if (entity instanceof Blob)
 					{
-						if(player)
+						if (player)
 						{
 							points.addPoints(10);
-							((Blob)entity).destroy();
+							((Blob) entity).destroy();
 						}
 					}
 				}
@@ -133,7 +132,7 @@ public class Character extends GameComponent implements IEntity
 	{
 		return directionOfMovement;
 	}
-	
+
 	public boolean isPlayer()
 	{
 		return player;

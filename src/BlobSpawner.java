@@ -4,7 +4,6 @@ import org.newdawn.slick.tiled.TiledMap;
 public class BlobSpawner
 {
 	private static final int BLOB_LAYER = 2;
-	private static final int BLOB_COUNT = 200;
 	
 	public static void addBlobs(TiledMap map, Main main) throws SlickException
 	{	
