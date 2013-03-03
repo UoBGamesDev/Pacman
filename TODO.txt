@@ -1,0 +1,3 @@
+TODO:
+Add Blobs for points
+Add GameOver / Menu
